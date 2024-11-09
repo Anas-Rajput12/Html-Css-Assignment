@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight</title>
+    <style>
+        img {
+            width: 8%;
+            height: 8%;
+        }
+
+        header {
+            display: flex;
+            background-color: rgb(0, 179, 255);
+            width: 99%;
+            border-radius: 20px;
+            border: 2px solid;
+            position: fixed;
+            font-size: 20px;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Keeps header on top */
+        }
+
+        .container {
+            margin-top: 60px; /* Adjusted to ensure form isn't hidden behind fixed header */
+        }
+
+        ul {
+            display: flex;
+            margin-left: 10%;
+            gap: 25%;
+            margin-top: 3%;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        #contact {
+            margin-top: 10px; /* Push form 10px down from header */
+            padding: 20px;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        form{
+            margin-top: 5%;
+        }
+        legend {
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #00b3ff;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0099cc;
+        }
+        footer {
+        background-color: rgb(0, 179, 255);
+        width: 99%;
+        border-radius: 5px;
+        border: 1px solid;
+        text-align: center;
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo">
+            <ul>
+                <li><a href="html.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div id="contact">
+        <form action="">
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label for="text">Name:</label>
+                <input type="text" name="text" placeholder="Enter Your Name" required><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="Enter Your E-mail" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Reviews:</legend>
+                <h3>How did You Hear about us?</h3>
+                <select name="" id="">
+                    <option value="">Google</option>
+                </select><br><br>
+
+                <h3>Would you visit again?</h3>
+                <label>
+                    <input type="radio" name="visit_again" value="yes" required> Yes
+                </label>
+                <label>
+                    <input type="radio" name="visit_again" value="no"> No
+                </label>
+                <label>
+                    <input type="radio" name="visit_again" value="maybe"> Maybe
+                </label><br><br>
+
+                <label for="">Comments:</label><br>
+                <textarea name="" id="" rows="5" cols="40" required></textarea><br><br>
+
+                <label>
+                    <input type="checkbox" name="email_updates" value="yes"> Sign me up for email updates
+                </label><br><br>
+
+                <button type="submit">Submit reviews</button>
+            </fieldset>
+        </form>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57257.091459029514!2d68.3618407223931!3d26.243215811157352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394a4cb563f028e5%3A0x93d25e06c0ec002d!2sNawabshah%2C%20Shaheed%20Benazirabad%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1730838876807!5m2!1sen!2s"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <footer>
+        Copyright &copy; 2024. All right reserved.
+    </footer>
+</body>
+</html>
